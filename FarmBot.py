@@ -78,7 +78,6 @@ class Bot:
             # check whether the process name matches
             if proc.name() == self.game: #if the process name is = to the game name kill it
                 proc.kill()
-                _exit(1)
 
     def matchesButton(self, position):
         if self.pixelMatchesColor(position[0], position[1], self.getColor('white_button'),
@@ -95,7 +94,7 @@ class Bot:
         return False
 
     def isGameRunning(self): #True if the game is running false if not
-    	self.game in (p.name() for p in psutil.process_iter())
+        self.game in (p.name() for p in psutil.process_iter())
 
     def checkTimer(self): #Check for timeout
         if self.state == self.loading_state and self.timer > self.loading_timer_max:
@@ -300,22 +299,21 @@ class Bot:
                     busy()
                     sleep(5)
                     if self.game in (p.name() for p in psutil.process_iter()) is False:
-                    	try:
-                    		startfile(self.pubg_url)
-                    		self.changeState(self.loading_state)
-                    		sleep(start_delay)
-                    		print('Loading PUBG Again xD')
-                    	except Exception:
-                    		print(' If this doesn´t work, report it pls')
+                        try:
+                            startfile(self.pubg_url)
+                            self.changeState(self.loading_state)
+                            sleep(start_delay)
+                            print('Loading PUBG Again xD')
+                        except Exception:
+                            print(' If this doesn´t work, report it pls')
             sleep(refresh_rate)
             self.timer += refresh_rate
             if self.game in (p.name() for p in psutil.process_iter()) is False:
-            	try:
-            		startfile(self.pubg_url)
-            		self.changeState(self.loading_state)
-            		sleep(start_delay)
-            		print('Loading PUBG Again xD')
-            	except Exception:
-            		print(' If this doesn´t work, report it pls')
+                try:
+                    startfile(self.pubg_url)
+                    self.changeState(self.loading_state)
+                    sleep(start_delay)
+                    print('Loading PUBG Again xD')
+                except Exception:
+                    print('If this doesn´t work, report it pls')
             self.checkTimer()
-          

@@ -19,18 +19,7 @@ Don´t ask any question if you don´t follow this Instructions.
 
 
 3-Now you will have installed python and pip with the needed modules,
-so lets put your coords (unless you use 1920x1080 (already there)), for that go here https://pastebin.com/DHBQB0XU
-create a python file (make sure to have the option to see the extension of the file) 
-so just a file with the name that you want with that code but with .py not .txt
-
-4- As it says the step 3 if you use 1080 just leave it like that if not, 
-you have to put the coords in the first line of the reconnect button,
-in the second line the coords of the button to leave to lobby when you die (right botton corner),
-and in the thirth line the coords of the reconnect to the servers are busy msg. It has to be like that (with your cords ofc)
-
-1021 626
-1721 960
-972 615
+so lets get the coords, just open generator.py and select your resolution <3
 
 ------------------------------------------------------------------------
 Notes

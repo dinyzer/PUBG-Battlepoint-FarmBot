@@ -53,8 +53,9 @@ def busy():
 		int(f)
 		time.sleep(2)
 		pyautogui.press('esc')
+		time.sleep('0.5')
 		pyautogui.click((e,f))
-		time.sleep(5)
+		time.sleep(6)
 		print('Restarting lobby to avoid servers are busy')
 	except IndexError:
 		print('You don´t have the coords for Restart lobby')

@@ -13,7 +13,7 @@ actual_time = str(datetime.now().strftime('%Y-%m-%d %H-%M-%S'))
 
 class Bot:
 	def __init__(self):
-		self.pubg_open            = webbrowser.open('steam://rungameid/578080')
+		self.pubg_url            = ('steam://rungameid/578080')
 		self.game                 = 'TslGame.exe'
 		self.crash_procname       = 'BroCrashReporter.exe'
 		self.start_state          = 'Starting'
@@ -160,7 +160,7 @@ class Bot:
 				self.killgame()
 				sleep(wait_after_killing_a_game)
 				try:
-					self.pubg_open
+					webbrowser.open(self.pubg_url)
 					self.changeState(self.loading_state)
 					sleep(start_delay)
 					sleep(10)

@@ -7,13 +7,13 @@ from random import randint
 import psutil
 from pyautogui import keyDown, keyUp, screenshot, press , click, moveTo
 import coords
-veces = 0
+
 bps = 0
 actual_time = str(datetime.now().strftime('%Y-%m-%d %H-%M-%S'))
 
 class Bot:
 	def __init__(self):
-		self.pubg_open            = webbrowser.open('steam://rungameid/578080')
+		self.pubg_url           = ('steam://rungameid/578080')
 		self.game                 = 'TslGame.exe'
 		self.crash_procname       = 'BroCrashReporter.exe'
 		self.start_state          = 'Starting'
@@ -160,7 +160,7 @@ class Bot:
 				self.killgame()
 				sleep(wait_after_killing_a_game)
 				try:
-					self.pubg_open
+					webbrowser.open(self.pubg_url)
 					self.changeState(self.loading_state)
 					sleep(start_delay)
 					sleep(10)
@@ -229,8 +229,7 @@ class Bot:
 					sleep(wait_for_plane)
 					press('f')
 					print('F was hit')
-					tiempoo = randint(315,340)
-					timeout = time() + tiempoo - wait_for_plane
+					timeout = time() + 315 - wait_for_plane
 					keyDown('w')
 					keyDown('space')
 					print('Pressing space to let you alive if you fall in the water')
@@ -274,9 +273,3 @@ class Bot:
 			sleep(refresh_rate)
 			self.timer += refresh_rate
 			self.checkTimer()
-			global veces
-			if veces < 10:
-				veces += veces
-			else:
-				veces = 0
-				sleep(900)

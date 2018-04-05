@@ -37,6 +37,8 @@ because the PC has to be rebooted at 2 hours of running the bot
 
 6- Safe, no has been banned for AFK farming
 
+7-It uses webbrowser so it could be detected as a virus that open browser
+
 8- If you want to support me paypal peleonyt@gmail.com or just a thx in MPGH
 ------------------------------------------------------------------------
 CLOXEN NOTES (First developer (I´m just the current one))

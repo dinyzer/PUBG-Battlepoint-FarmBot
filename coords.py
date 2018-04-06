@@ -53,7 +53,7 @@ def busy():
 		int(f)
 		time.sleep(2)
 		pyautogui.press('esc')
-		time.sleep('0.5')
+		time.sleep(0.5)
 		pyautogui.click((e,f))
 		time.sleep(6)
 		print('Restarting lobby to avoid servers are busy')

@@ -1,4 +1,4 @@
-                .__                          _______   ________  
+﻿                .__                          _______   ________  
 ______    ____  |  |    ____   ____    ____  \   _  \  \_____  \ 
 \____ \ _/ __ \ |  |  _/ __ \ /  _ \  /    \ /  /_\  \  /  ____/ 
 |  |_> >\  ___/ |  |__\  ___/(  <_> )|   |  \\  \_/   \/       \ 
@@ -33,13 +33,11 @@ because the PC has to be rebooted at 2 hours of running the bot
 
 4- It can work with an empty input.txt (But it won´t click) (But make sure to have the input.txt)
 
-5- Around 6k per 8 hours without you having to do anything ( 42k bp a week @ 8 hours a day, all the crates + sell them on steam)
+5- Safe, no has been banned for AFK farming
 
-6- Safe, no has been banned for AFK farming
+6- It uses webbrowser so it could be detected as a virus that open browser
 
-7-It uses webbrowser so it could be detected as a virus that open browser
-
-8- If you want to support me paypal peleonyt@gmail.com or just a thx in MPGH
+7- If you want to support me paypal peleonyt@gmail.com or just a thx in MPGH
 ------------------------------------------------------------------------
 CLOXEN NOTES (First developer (I´m just the current one))
 ------------------------------------------------------------------------
@@ -73,26 +71,18 @@ CLOXEN NOTES (First developer (I´m just the current one))
 
 This bot will: 
 
-* auto jump at a random point on the plane.
-
-* auto hold down the space bar just in case you land in water and end up underwater 
-
-* It will also lay down after running and jumping. 
-
-* I added a few more configs to the bot so it supports 2560x 1440p and 2560 x1080p. I dont have the last resolution so it might not work well for 2560 x 1080p.
-
-* Create a file that tells you the Bps that you have won (It couldn´t be exact)
-
-* Leave all the buttons (die(JUST WAIT BEFORE FLAME), reconnect, and servers busy)
-
-* Can work with an empty input.txt ofc, it wont click that xD
+* starts PUBG
+* joins 1-man squads 
+* jumps at a random point on the plane
+* if character lands in water, it will keep character above water (holding SPACE)
+* character will run and jump for a period of time, then prone and exit match
+* logs BP earned via a text file
+* handles all stops/errors (character died, reconnect, servers too busy, etc.)
 
 
 Future changes:
 
-*Make sure that the bor reopen the GAME
-
-*"Laptop mode", to turn the bot off for 30m (with the game too ofc) (in april I should have it)
+*New GUI (Need help with qt designer)
 
 *Tell me more <3	
 

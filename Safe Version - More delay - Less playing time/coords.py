@@ -1,5 +1,5 @@
 import time, pyautogui
-def coordinadas():
+def coordenadas():
 	"""
 	Click cancel in the rejoin msg
 	"""
@@ -52,13 +52,14 @@ def busy():
 		int(e)
 		int(f)
 		time.sleep(2)
+		pyautogui.press('esc')
+		time.sleep(0.5)
 		pyautogui.click((e,f))
-		time.sleep(2)
-		pyautogui.click((e,f))
-		print('Click the reconnect msg in case servers are busy')
+		time.sleep(6)
+		print('Restarting lobby to avoid servers are busy')
 	except IndexError:
-		print('You don´t have the coords for servers are busy')
+		print('You don´t have the coords for Restart lobby')
 def showbps(numero, actual_time):
 	f = open('BPs won %s.txt'%actual_time,'w')
-	f.write("Total BPs won" + numero)
+	f.write("Total BPs won " + numero)
 	f.close

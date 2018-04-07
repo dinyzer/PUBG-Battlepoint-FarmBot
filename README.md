@@ -6,7 +6,7 @@ just in the tab Help in the bot you can join in my Discord (I´m peleon02 and in
 
 
 # Preview
-![alt text](https://i.imgur.com/g4xrjaz.mp4 "Screenshot")
+![alt text](https://media.giphy.com/media/wHeRtOqDbohDkbjyNq/giphy.gif "Screenshot")
 
 
 # Features

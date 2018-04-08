@@ -10,11 +10,11 @@ def coordenadas():
 		a, b = x.split()
 		int(a)
 		int(b)
-		time.sleep(3) #Change the number between () if your pc doesnt click the rejoin cancel button put a higher number
+		time.sleep(0.5) #Change the number between () if your pc doesnt click the rejoin cancel button put a higher number
 		pyautogui.click((a,b))
-		time.sleep(2)
+		time.sleep(0.5)
 		pyautogui.click((a,b))
-		time.sleep(2)
+		time.sleep(0.5)
 		pyautogui.click((a,b))
 		print('Click on cancel just i case that the reconnect button is there')
 	except IndexError:
@@ -31,11 +31,11 @@ def salir():
 		c, d = y.split()
 		int(c)
 		int(d)
-		time.sleep(1)
+		time.sleep(0.5)
 		pyautogui.click((c,d))
-		time.sleep(1)
+		time.sleep(0.5)
 		pyautogui.click((c,d))
-		time.sleep(1)
+		time.sleep(0.5)
 		pyautogui.click((c,d))
 		print('Click on leave game jus in case that you died')
 	except IndexError:
@@ -51,11 +51,11 @@ def busy():
 		e, f = z.split()
 		int(e)
 		int(f)
-		time.sleep(2)
+		time.sleep(0.5)
 		pyautogui.press('esc')
 		time.sleep(0.5)
 		pyautogui.click((e,f))
-		time.sleep(6)
+		time.sleep(0.5)
 		print('Restarting lobby to avoid servers are busy')
 	except IndexError:
 		print('You don´t have the coords for Restart lobby')
